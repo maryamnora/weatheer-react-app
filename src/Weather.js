@@ -16,7 +16,7 @@ export default function Weather(props){
             wind:(Math.round(response.data.wind.speed)),
             humidity:response.data.main.humidity,
             description:response.data.weather[0].description,
-            iconurl:"https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+            iconurl:`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
         });
         setReady(true)
     }
@@ -43,6 +43,8 @@ export default function Weather(props){
                 onChange={handleCityChange}/>
                 </div>
                 <div className="col-3">
+
+
                 <input type="submit" value="search" className="btn btn-primary w-100" />
                 </div>
                 </div>
