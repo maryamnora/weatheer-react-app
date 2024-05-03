@@ -16,8 +16,8 @@ function Far(){
 }
 if (unit==="celsius"){
 return(
-<span className="WeatherTemperature">
-<span className="temperature">{props.celsius}</span>
+<span className="WeatherTemperature ">
+<span className="temperature ps-0">{props.celsius}</span>
 <span className="unit">°C | 
 <a href="/" onClick={Fahrenheit}>°F</a></span>
 
@@ -26,7 +26,7 @@ return(
 }else{
     return(
 <span className="WeatherTemperature">
-<span className="temperature">{Math.round(Far())}</span>
+<span className="temperature ps-0">{Math.round(Far())}</span>
 <span className="unit"><a href="/" onClick={Celsius}> °C </a>| 
 °F</span>
 </span>

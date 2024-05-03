@@ -20,11 +20,10 @@ const codeMapping={
     "11n":"lightning",
     "13d":"snowy",
     "13n":"snowy",
-    "50d":"fog",
-    "50n":"fog",
+    "50d":"windy",
+    "50n":"windy",
 };
     return (
-    <WeatherSvg state={codeMapping[props.code]} width={90} height={90}
-    className="mb-4 me-0 ps-3"/>
+    <WeatherSvg state={codeMapping[props.code]} width={props.size} height={props.size}  />
 );
 }
