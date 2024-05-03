@@ -1,3 +1,6 @@
+body{ background: linear-gradient(180.3deg, rgb(214, 224, 255) 37.2%, rgb(254, 168, 168) 137.3%);
+   padding-bottom: 140px;
+}
 .Weather{
    border: 1px solid #dadde1;
    border-radius: 4px;
@@ -5,6 +8,9 @@
    font-family: arial, sans-serif;
    padding: 16px;
    color: rgb(135,135,135);
+   background-color: rgb(247, 242, 242);
+ 
+  
 }
 .Weather h1{
    font-size: 24px;
